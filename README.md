@@ -6,23 +6,9 @@ Welcome! This repository hosts my personal developer portfolio, showcasing my pr
 
 ---
 
-## 🚀 Live Demo
+## Have a Look :D
 
 👉 **[smehnazcodes.github.io/My-Protfolio](https://smehnazcodes.github.io/My-Protfolio/)**
 
----
 
-## 🛠️ Tech Stack
 
-- **HTML5 & CSS3**
-- **JavaScript (ES6+)**
-- **GitHub Pages**
-
----
-
-## ⚙️ Quick Start
-
-```bash
-git clone [https://github.com/smehnazcodes/My-Protfolio.git](https://github.com/smehnazcodes/My-Protfolio.git)
-cd My-Protfolio
-open index.html
