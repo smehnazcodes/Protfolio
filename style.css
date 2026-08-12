@@ -1,4 +1,5 @@
 /* GENERAL STYLES */
+/* GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
 
 body {
     background-color: #ffffff;
-    color: #1e1b4b; /* Deep Indigo Text */
+    color: #1e1b4b;
     line-height: 1.6;
     letter-spacing: -0.01em;
 }
@@ -34,7 +35,7 @@ body {
 .logo {
     font-size: 1.25rem;
     font-weight: 800;
-    color: #3730a3; /* Deep Indigo */
+    color: #3730a3;
     letter-spacing: -0.02em;
 }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #dc2626; /* Crimson Red on Hover */
+    color: #dc2626;
 }
 
 /* HERO SECTION */
@@ -62,13 +63,13 @@ body {
     display: flex;
     align-items: center;
     padding: 120px 10% 60px;
-    background-color: #f5f3ff; /* Subtle Indigo Tint */
+    background-color: #f5f3ff;
     border-bottom: 1px solid #e0e7ff;
 }
 
 .badge {
     display: inline-block;
-    background-color: #dc2626; /* Vibrant Red Badge */
+    background-color: #dc2626;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 20px;
@@ -87,12 +88,12 @@ body {
 }
 
 .highlight {
-    color: #4338ca; /* Indigo Highlight */
+    color: #4338ca;
 }
 
 .hero-content h2 {
     font-size: 1.25rem;
-    color: #dc2626; /* Accent Red Title */
+    color: #dc2626;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -117,7 +118,7 @@ body {
 }
 
 .primary-btn {
-    background-color: #4338ca; /* Indigo Button */
+    background-color: #4338ca;
     color: #ffffff;
 }
 
@@ -126,7 +127,7 @@ body {
 }
 
 .secondary-btn {
-    border: 2px solid #dc2626; /* Red Outline Button */
+    border: 2px solid #dc2626;
     color: #dc2626;
     background-color: #ffffff;
 }
@@ -161,7 +162,7 @@ body {
     color: #1e1b4b;
     font-weight: 800;
     margin-bottom: 35px;
-    border-left: 5px solid #dc2626; /* Red Accent Line */
+    border-left: 5px solid #dc2626;
     padding-left: 14px;
     letter-spacing: -0.02em;
 }
@@ -185,12 +186,12 @@ body {
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #e0e7ff;
-    border-left: 5px solid #4338ca; /* Indigo Border */
+    border-left: 5px solid #4338ca;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
 }
 
 .experience-card.upcoming {
-    border-left-color: #dc2626; /* Red Border for Incoming */
+    border-left-color: #dc2626;
 }
 
 .exp-header {
@@ -211,4 +212,230 @@ body {
     font-weight: 600;
     font-size: 0.85rem;
     background-color: #fef2f2;
-    padding: 4
+    padding: 4px 12px;
+    border-radius: 15px;
+}
+
+.lab-title {
+    color: #4338ca;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.exp-supervisor {
+    color: #1e1b4b;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.exp-focus {
+    color: #312e81;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    color: #312e81;
+    font-size: 0.95rem;
+}
+
+.experience-card li {
+    margin-bottom: 6px;
+}
+
+/* PUBLICATIONS */
+.research-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    border-left: 5px solid #dc2626;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.research-card h3 {
+    color: #1e1b4b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.citation-box {
+    background-color: #f5f3ff;
+    border: 1px solid #e0e7ff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.citation-text {
+    font-size: 0.88rem;
+    color: #312e81;
+}
+
+.pub-desc {
+    color: #4338ca;
+    font-size: 0.95rem;
+}
+
+.paper-link {
+    color: #dc2626;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.paper-link:hover {
+    text-decoration: underline;
+}
+
+/* AWARDS */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.award-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.award-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.gold .award-icon { color: #d97706; }
+.silver .award-icon { color: #64748b; }
+.highlight-card .award-icon { color: #dc2626; }
+
+.award-card h3 {
+    color: #1e1b4b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.award-card p {
+    color: #4338ca;
+    font-size: 0.9rem;
+}
+
+.award-card span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.project-card h3 {
+    color: #1e1b4b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.category {
+    color: #dc2626;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.project-card p {
+    color: #312e81;
+    font-size: 0.9rem;
+}
+
+.tags {
+    margin-top: 15px;
+}
+
+.tags span {
+    background-color: #fef2f2;
+    color: #dc2626;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 6px;
+    border: 1px solid #fecaca;
+}
+
+/* SKILLS */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-group {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.skill-group h3 {
+    margin-bottom: 10px;
+    color: #4338ca;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.skill-group p {
+    color: #312e81;
+    font-size: 0.9rem;
+}
+
+/* CONTACT */
+.contact-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+    color: #1e1b4b;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e7ff;
+    color: #64748b;
+    font-size: 0.85rem;
+}
