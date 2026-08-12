@@ -1,87 +1,440 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samia Mehnaz | Electrical Engineering Portfolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    <nav class="navbar">
-        <div class="logo">Samia Mehnaz</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+body {
+    background-color: #ffffff;
+    color: #1e1b4b; /* Deep Indigo Text */
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+}
 
-    <section id="about" class="hero">
-        <div class="hero-content">
-            <span class="badge">Texas Tech University</span>
-            <h1>Hi, I'm <span class="highlight">Samia Mehnaz</span></h1>
-            <h2>Electrical Engineering Student</h2>
-            <p>Undergraduate student at Texas Tech University with hands-on research experience in application-based advanced materials and machine learning. International Robot Olympiad Gold & Silver Medalist with a passion for autonomous systems and AI applications.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="mailto:samehnaz@ttu.edu" class="btn secondary-btn"><i class="fa-solid fa-envelope"></i> Contact Me</a>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/smehnaz" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=pHT_p_gAAAAJ&hl=en&authuser=3" target="_blank" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-                <a href="https://github.com/smehnazcodes" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="tel:8067026628" title="Phone"><i class="fa-solid fa-phone"></i></a>
-            </div>
-        </div>
-    </section>
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #e0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
 
-    <section id="research" class="section">
-        <h2 class="section-title">Research Experience & Publications</h2>
-        
-        <div class="section-subtitle-container">
-            <h3 class="subsection-heading"><i class="fa-solid fa-flask"></i> Ongoing Lab Experience</h3>
-        </div>
+.logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #3730a3; /* Deep Indigo */
+    letter-spacing: -0.02em;
+}
 
-        <div class="experience-timeline">
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>Undergraduate Research Assistant</h3>
-                    <span class="exp-date">October 2024 – Present</span>
-                </div>
-                <p class="lab-title">ECE Department | Texas Tech University</p>
-                <p class="exp-supervisor"><strong>Advisor:</strong> Dr. Zhou Lyu</p>
-                <p class="exp-focus"><strong>Focus:</strong> Application-Based Advanced Materials Research</p>
-                <ul>
-                    <li>Perform chemical synthesis of novel advanced materials for electronic and energy applications.</li>
-                    <li>Conduct thermal and optical characterization tests to evaluate material performance and properties.</li>
-                    <li>Analyze literature, contribute to experimental design, and regularly present findings during lab group meetings.</li>
-                </ul>
-            </div>
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
 
-            <div class="experience-card upcoming">
-                <div class="exp-header">
-                    <h3>Undergraduate Research Assistant (Incoming)</h3>
-                    <span class="exp-date">August 2026 – Present</span>
-                </div>
-                <p class="lab-title">Mechanical Engineering Department | Texas Tech University</p>
-                <p class="exp-supervisor"><strong>Advisor:</strong> Dr. Ahmad Zeeshan</p>
-                <p class="exp-focus"><strong>Focus:</strong> Machine Learning Aspects of Materials</p>
-                <ul>
-                    <li>Applying machine learning models and data-driven methods to analyze and predict material behavior.</li>
-                    <li>Integrating computational tools with experimental insights to accelerate materials discovery.</li>
-                </ul>
-            </div>
-        </div>
+.nav-links a {
+    color: #4338ca;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
 
-        <div class="section-subtitle-container" style="margin-top: 50px;">
-            <h3
+.nav-links a:hover {
+    color: #dc2626; /* Crimson Red on Hover */
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 10% 60px;
+    background-color: #f5f3ff; /* Subtle Indigo Tint */
+    border-bottom: 1px solid #e0e7ff;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #dc2626; /* Vibrant Red Badge */
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #1e1b4b;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -0.03em;
+}
+
+.highlight {
+    color: #4338ca; /* Indigo Highlight */
+}
+
+.hero-content h2 {
+    font-size: 1.25rem;
+    color: #dc2626; /* Accent Red Title */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin-bottom: 30px;
+    color: #312e81;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-right: 12px;
+    transition: all 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #4338ca; /* Indigo Button */
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #3730a3;
+}
+
+.secondary-btn {
+    border: 2px solid #dc2626; /* Red Outline Button */
+    color: #dc2626;
+    background-color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #4338ca;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #dc2626;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #1e1b4b;
+    font-weight: 800;
+    margin-bottom: 35px;
+    border-left: 5px solid #dc2626; /* Red Accent Line */
+    padding-left: 14px;
+    letter-spacing: -0.02em;
+}
+
+.subsection-heading {
+    font-size: 1.2rem;
+    color: #3730a3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* RESEARCH & EXPERIENCE */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    border-left: 5px solid #4338ca; /* Indigo Border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.experience-card.upcoming {
+    border-left-color: #dc2626; /* Red Border for Incoming */
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.exp-header h3 {
+    font-size: 1.2rem;
+    color: #1e1b4b;
+    font-weight: 700;
+}
+
+.exp-date {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.85rem;
+    background-color: #fef2f2;
+    padding: 4px 12px;
+    border-radius: 15px;
+}
+
+.lab-title {
+    color: #4338ca;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.exp-supervisor {
+    color: #1e1b4b;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.exp-focus {
+    color: #312e81;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    color: #312e81;
+    font-size: 0.95rem;
+}
+
+.experience-card li {
+    margin-bottom: 6px;
+}
+
+/* PUBLICATIONS */
+.research-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    border-left: 5px solid #dc2626;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.research-card h3 {
+    color: #1e1b4b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.citation-box {
+    background-color: #f5f3ff;
+    border: 1px solid #e0e7ff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.citation-text {
+    font-size: 0.88rem;
+    color: #312e81;
+}
+
+.pub-desc {
+    color: #4338ca;
+    font-size: 0.95rem;
+}
+
+.paper-link {
+    color: #dc2626;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.paper-link:hover {
+    text-decoration: underline;
+}
+
+/* AWARDS */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.award-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.award-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.gold .award-icon { color: #d97706; }
+.silver .award-icon { color: #64748b; }
+.highlight-card .award-icon { color: #dc2626; }
+
+.award-card h3 {
+    color: #1e1b4b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.award-card p {
+    color: #4338ca;
+    font-size: 0.9rem;
+}
+
+.award-card span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.project-card h3 {
+    color: #1e1b4b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.category {
+    color: #dc2626;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.project-card p {
+    color: #312e81;
+    font-size: 0.9rem;
+}
+
+.tags {
+    margin-top: 15px;
+}
+
+.tags span {
+    background-color: #fef2f2;
+    color: #dc2626;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-right: 6px;
+    border: 1px solid #fecaca;
+}
+
+/* SKILLS */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-group {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.skill-group h3 {
+    margin-bottom: 10px;
+    color: #4338ca;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.skill-group p {
+    color: #312e81;
+    font-size: 0.9rem;
+}
+
+/* CONTACT */
+.contact-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e7ff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+    color: #1e1b4b;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e7ff;
+    color: #64748b;
+    font-size: 0.85rem;
+}
