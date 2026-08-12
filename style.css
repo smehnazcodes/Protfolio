@@ -1,5 +1,4 @@
 /* GENERAL STYLES */
-/* GENERAL STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body {
 /* NAVBAR */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Right-aligns navigation items */
     align-items: center;
     padding: 18px 8%;
     background-color: #ffffff;
@@ -30,13 +29,6 @@ body {
     z-index: 1000;
     border-bottom: 2px solid #e0e7ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-}
-
-.logo {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #3730a3;
-    letter-spacing: -0.02em;
 }
 
 .nav-links {
@@ -54,7 +46,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #dc2626;
+    color: #991b1b; /* Dark Burgundy Red on Hover */
 }
 
 /* HERO SECTION */
@@ -69,7 +61,7 @@ body {
 
 .badge {
     display: inline-block;
-    background-color: #dc2626;
+    background-color: #991b1b; /* Dark Red Badge */
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 20px;
@@ -93,17 +85,23 @@ body {
 
 .hero-content h2 {
     font-size: 1.25rem;
-    color: #dc2626;
+    color: #991b1b; /* Dark Red Subtitle */
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 .hero-content p {
-    max-width: 700px;
-    margin-bottom: 30px;
+    max-width: 750px;
+    margin-bottom: 15px;
     color: #312e81;
     font-size: 1.05rem;
     font-weight: 400;
+}
+
+.personal-touch {
+    font-style: italic;
+    color: #4338ca !important;
+    margin-bottom: 30px !important;
 }
 
 .btn {
@@ -127,13 +125,13 @@ body {
 }
 
 .secondary-btn {
-    border: 2px solid #dc2626;
-    color: #dc2626;
+    border: 2px solid #991b1b; /* Dark Red Button */
+    color: #991b1b;
     background-color: #ffffff;
 }
 
 .secondary-btn:hover {
-    background-color: #dc2626;
+    background-color: #991b1b;
     color: #ffffff;
 }
 
@@ -149,7 +147,7 @@ body {
 }
 
 .social-links a:hover {
-    color: #dc2626;
+    color: #991b1b;
 }
 
 /* SECTIONS */
@@ -162,7 +160,7 @@ body {
     color: #1e1b4b;
     font-weight: 800;
     margin-bottom: 35px;
-    border-left: 5px solid #dc2626;
+    border-left: 5px solid #991b1b; /* Dark Red Line */
     padding-left: 14px;
     letter-spacing: -0.02em;
 }
@@ -191,7 +189,7 @@ body {
 }
 
 .experience-card.upcoming {
-    border-left-color: #dc2626;
+    border-left-color: #991b1b;
 }
 
 .exp-header {
@@ -208,7 +206,7 @@ body {
 }
 
 .exp-date {
-    color: #dc2626;
+    color: #991b1b;
     font-weight: 600;
     font-size: 0.85rem;
     background-color: #fef2f2;
@@ -252,7 +250,7 @@ body {
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #e0e7ff;
-    border-left: 5px solid #dc2626;
+    border-left: 5px solid #991b1b;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
 }
 
@@ -282,7 +280,7 @@ body {
 }
 
 .paper-link {
-    color: #dc2626;
+    color: #991b1b;
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
@@ -317,7 +315,7 @@ body {
 
 .gold .award-icon { color: #d97706; }
 .silver .award-icon { color: #64748b; }
-.highlight-card .award-icon { color: #dc2626; }
+.highlight-card .award-icon { color: #991b1b; }
 
 .award-card h3 {
     color: #1e1b4b;
@@ -359,7 +357,7 @@ body {
 }
 
 .category {
-    color: #dc2626;
+    color: #991b1b;
     font-size: 0.8rem;
     font-weight: 700;
     margin-bottom: 12px;
@@ -378,7 +376,7 @@ body {
 
 .tags span {
     background-color: #fef2f2;
-    color: #dc2626;
+    color: #991b1b;
     padding: 4px 10px;
     border-radius: 6px;
     font-size: 0.75rem;
