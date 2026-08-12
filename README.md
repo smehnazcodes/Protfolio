@@ -2,9 +2,7 @@
 
 [![Live Site](https://img.shields.io/badge/Website-Live-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://smehnazcodes.github.io/My-Protfolio/)
 
-Welcome! This repository hosts my personal developer portfolio, showcasing my projects, technical skills, and work in AI, Machine Learning, and Web Development.
-
----
+Welcome! This repository hosts my personal portfolio.
 
 ## Have a Look :D
 
