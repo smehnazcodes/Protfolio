@@ -1,4 +1,4 @@
-# 🌐 Personal Developer Portfolio
+# My Personal Portfolio
 
 [![Live Site](https://img.shields.io/badge/Website-Live-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://smehnazcodes.github.io/My-Protfolio/)
 
