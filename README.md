@@ -6,7 +6,7 @@ Welcome! This repository hosts my personal portfolio.
 
 ## Have a Look :D
 
-👉 **[smehnazcodes.github.io/My-Protfolio](https://smehnazcodes.github.io/My-Protfolio/)**
+ **[smehnazcodes.github.io/My-Protfolio](https://smehnazcodes.github.io/My-Protfolio/)**
 
 
 
